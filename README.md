@@ -183,7 +183,7 @@ Through this project I practiced:
 
 # 👨‍💻 Author
 
-**Surya Teja Tangirala**
+**Surya Teja Tangella**
 
 Aspiring **Software Developer transitioning from Banking to FinTech/IT**, building projects in:
 
