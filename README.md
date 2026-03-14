@@ -1,70 +1,214 @@
-# Getting Started with Create React App
+# 🍕 Pizza Menu App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **modern React application** that displays a dynamic pizza menu using reusable components and clean UI design.
 
-## Available Scripts
+This project demonstrates **React fundamentals such as component architecture, props, conditional rendering, and rendering lists from data** while building a real-world styled menu interface.
 
-In the project directory, you can run:
+It is designed as a **learning project to practice building reusable UI components and structuring React applications properly.**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Live Demo (Optional – add if deployed)
 
-### `npm test`
+```
+https://pizza-menu-app-six.vercel.app/
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+# 📸 Application Preview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt text](screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# ✨ Features
 
-### `npm run eject`
+* Dynamic pizza menu rendered from data
+* Clean component-based architecture
+* Reusable UI components
+* Conditional rendering for menu availability
+* Responsive layout
+* Organized project structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Technology        | Purpose            |
+| ----------------- | ------------------ |
+| React.js          | UI development     |
+| JavaScript (ES6+) | Application logic  |
+| HTML5             | Page structure     |
+| CSS3              | Styling and layout |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+# 🧠 React Concepts Demonstrated
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project demonstrates important **React core concepts**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1️⃣ Component-Based Architecture
 
-### Code Splitting
+The UI is broken into reusable components:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Header
+* Menu
+* Pizza
+* Footer
 
-### Analyzing the Bundle Size
+This improves **modularity and maintainability**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### 2️⃣ Props
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Data is passed between components using **props**, allowing components to remain reusable and flexible.
 
-### Advanced Configuration
+Example concept:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+<Pizza name="Pepperoni" price={12} ingredients="Tomato, Cheese, Pepperoni" />
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 3️⃣ Rendering Lists with `map()`
 
-### `npm run build` fails to minify
+Menu items are rendered dynamically from a **data array**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is a common React pattern when displaying collections.
+
+---
+
+### 4️⃣ Conditional Rendering
+
+The app shows whether the restaurant is **open or closed** depending on the time.
+
+This demonstrates conditional UI logic in React.
+
+---
+
+# 📂 Project Structure
+
+```
+pizza-menu-app
+│
+├── public
+│
+├── src
+│   │
+│   ├── App.js
+│   ├── index.js
+│   ├── data.js
+│   │
+│   └── components
+│        ├── Header.js
+│        ├── Menu.js
+│        ├── Pizza.js
+│        └── Footer.js
+│
+├── package.json
+└── README.md
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/SuryaTejaTangella/pizza-menu-app.git
+```
+
+---
+
+### 2️⃣ Navigate into the project
+
+```bash
+cd pizza-menu-app
+```
+
+---
+
+### 3️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 4️⃣ Run the application
+
+```bash
+npm start
+```
+
+The app will run on:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 📈 Future Improvements
+
+Potential enhancements for this project:
+
+* Add filtering (Veg / Non-Veg pizzas)
+* Add search functionality
+* Integrate a cart system
+* Add animations
+* Improve responsive design
+* Fetch menu data from an API
+
+---
+
+# 🎯 Learning Outcome
+
+Through this project I practiced:
+
+* Building React applications from scratch
+* Structuring UI with reusable components
+* Managing UI data using arrays and objects
+* Implementing conditional rendering
+* Writing clean and readable React code
+
+---
+
+# 👨‍💻 Author
+
+**Surya Teja Tangirala**
+
+Aspiring **Software Developer transitioning from Banking to FinTech/IT**, building projects in:
+
+* Java
+* JavaScript
+* React
+* Backend Development
+
+GitHub
+[https://github.com/SuryaTejaTangella](https://github.com/SuryaTejaTangella)
+
+Linkedin
+https://www.linkedin.com/in/suryatejatangella/
+
+---
+
+# ⭐ Support
+
+If you found this project helpful:
+
+⭐ Star the repository
+🍴 Fork it to build your own version
+
+---
+
+💡 *This project is part of my journey of building practical frontend projects and strengthening my React fundamentals.*
+
+---
